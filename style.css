@@ -11,7 +11,7 @@ body{
 nav{
     margin: 10px;
     background-color:var(--back-second) ;
-    border-radius: 20px;
+    border-radius: 10px;
     width: 250px;
     height: calc(100vh - 20px);
     float: left;
@@ -101,12 +101,14 @@ h2{
     height: fit-content;
     border-radius:100% ;
     margin-right: 10px;
+    
 }
 h3{
     color: whitesmoke;
     margin:0cap;
     font-size: 20px;
     font-weight: 400;
+    text-wrap:nowrap
 }
 p{
     margin: 0pc;
@@ -122,4 +124,74 @@ p{
     padding: 0px 20px;
     border-right: 1px solid var(--border);
     margin-right: 20px;
+}
+.dashboard{
+    position: absolute;
+    width: calc(100vw - 280px);
+    height: calc(100vh - 100px);
+    background-color: var(--back-prime);
+    right: 10px;
+    top:90px;
+    border-radius: 10px;
+    font-family: var(--font);
+    display: grid;
+    overflow: hidden;
+    grid-template-areas: 
+    'attendance attendance attendance semester internal internal'
+    'attendance attendance attendance semester internal internal'
+    'sgpa assignment assignment semester internal internal'
+    'bulletin bulletin bulletin event event event'
+    'bulletin bulletin bulletin event event event'
+    'bulletin bulletin bulletin event event event'
+    ;
+    gap: 10px;
+}
+.attendance{
+    grid-area: attendance;
+    background-color: var(--back-second);
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+.sgpa{
+    grid-area: sgpa;
+    background-color: var(--back-second);
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+.Assignment_status{
+    grid-area: assignment;
+    background-color: var(--back-second);
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+.internal_score{
+    grid-area: internal;
+    background-color: var(--back-second);
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+.semester{
+    grid-area: semester;
+    background-color: var(--back-second);
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+.bulletin{
+    grid-area: bulletin;
+    background-color: var(--back-second);
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+.event{
+    grid-area: event;
+    background-color: var(--back-second);
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 10px;
 }
