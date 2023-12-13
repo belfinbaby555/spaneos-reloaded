@@ -23,7 +23,7 @@ nav{
 }
 .search{
     width: calc(100vw - 300px);
-    height: 45px;
+    height: 44px;
     border-bottom: 1px solid var(--border);
     margin: 0px 20px;
     padding: 7px 0px;
@@ -154,13 +154,17 @@ p{
     background-color: var(--back-second);
     border-radius: 10px;
     box-sizing: border-box;
-    padding: 20px;
+    padding: 10px 20px;
+
 
 }
-.attendance > h2{
+h4{
     margin-top: 0;
-    margin-bottom: 20px;
+    padding-top: 0cap;
+    margin-bottom: 40px;
     font-size: 18px;
+    font-weight: 400;
+    color: white;
 }
 .sgpa{
     grid-area: sgpa;
@@ -184,7 +188,15 @@ p{
     grid-area: semester;
     background-color: var(--back-second);
     border-radius: 10px;
+    box-sizing: border-box;
+    padding: 10px 20px;
 
+}
+.semester > h4{
+    margin-bottom: 10px;
+}
+h4 > p{
+    font-size: 10px;
 }
 .bulletin{
     grid-area: bulletin;
@@ -195,4 +207,7 @@ p{
     grid-area: event;
     background-color: var(--back-second);
     border-radius: 10px;
+}
+#attend{
+    font-family: var(--font);
 }
